@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash tracker application</title>
+    <link rel="stylesheet" href="./assets/bootstrap_5_1/css/bootstrap.min.css">
+</head>
+<body class=" " style="background-image: url(./assets/images/calculator_coins.jpg);
+                background-repeat: no-repeat; background-size: cover;">
+    
+    <main class="min-vh-100 d-flex align-items-center">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 me-auto 
+                       mt-2  mt-md-0">                    
+                    <form action="" class="bg-white d-flex 
+                            flex-column rounded p-3 mt-auto mb-auto">
+                        <h1 class="mt-4">Compound Interest app</h1>
+                        <label for="email" class="mt-2 text-muted py-3">
+                            Enter amount
+                            <input type="number" placeholder="2000"
+                                class="ps-3 mt-1 rounded rounded-3 border-1 w-100 py-3"
+                                id="entered-amount">
+                        </label>
+
+                        <label for="" class="mt-2 text-muted py-3">
+                            Enter number of years
+                            <input type="number" placeholder="2000"
+                                class="ps-3 mt-1 rounded rounded-3 border-1 w-100 py-3"
+                                id="num-of-years">
+                        </label>
+                        
+                        <button type="button" class="btn btn-lg bg-dark text-white mt-3 py-3
+                            rounded rounded-2 border-0" id="submit-btn">
+                            Submit </button>
+                        
+                        <div class=" text-white mb-5 py-1">
+                           <h1 class=" pb-1 visually-hidden">hello </h1> 
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 me-auto 
+                    mt-2 mt-md-0 mb-3">                    
+                    <aside action="" class="bg-white d-flex 
+                            flex-column rounded p-3 mt-auto mb-auto">
+                        <h1 class="mt-4" >Your total balance:</h1>
+                        <h2 class="text-md-center" id="current-bal">0.00  </h2>
+                        
+                       <p
+                        class="ps-3 mt-1 rounded rounded-3 border-1
+                            w-100 py-3 fw-bold text-center h2 text-muted">
+                                Transaction history
+                            </p> 
+                        <div class="mt-2 text-muted pb-3 w-100 overflow-scroll"
+                             id="tranz-hist" style="height: 158px;">
+                            
+                            
+                            
+                        </div>
+                        
+                        
+                        <div class=" text-white mb-1 py-1">
+                           <h1 class=" pb-1 visually-hidden">hello </h1> 
+                        </div>
+                    </aside>
+
+
+                    
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./assets/jquery-3.6.0.min.js"></script>
+
+    <script src="./assets/bootstrap_5_1/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/dom_man.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
